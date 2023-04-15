@@ -14,7 +14,7 @@ body{
 
 .container{
     width: 60%;
-    height: 70vh;
+    height: 65vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,16 +23,16 @@ body{
 }
 
 .container::before{
-    width: 60%;
+    width: 57%;
     height: 65vh;
     border-radius: 40px;
-    margin-top: 8%;
+    margin-top: 10%;
     margin-left: 18%;
     content: "";
     background: #00BCD4;
     position: absolute;
     inset: 0;
-    transform: rotate(-17deg);
+    transform: rotate(-15deg);
     z-index: -1;
     
 }
@@ -40,7 +40,7 @@ body{
 .container .bloc-left{
     position: absolute;
     width: 25%;
-    height: 70vh;
+    height: 65vh;
     background: #00838F;
     left: 250px;
     border-bottom-left-radius: 20px;
@@ -48,8 +48,43 @@ body{
     text-align: center;
 }
 
+.container .bloc-left .box-2{
+    display: flex;
+    width: 21%;
+    height: 10vh;
+    border: 7px solid #FFECB3;
+    margin: 0 auto;
+    transform: rotate(-45deg);
+    border-radius: 15px;
+    margin-top: 35%;
+    margin-left: 60%;
+}
+
+.container .bloc-left .box-3{
+    display: flex;
+    width: 19%;
+    height: 9vh;
+    border: 5px solid #B2EBF2;
+    transform: rotate(-45deg);
+    border-radius: 15px;
+    margin-top: 25%;
+    margin-left: -8%;
+}
+
+.container .bloc-right .box-1{
+    display: flex;
+    width: 12%;
+    height: 8vh;
+    border: 7px solid #FFA000;
+    margin: 0 auto;
+    transform: rotate(-45deg);
+    border-radius: 11px;
+    margin-left: -5.5%;
+    margin-top: -19px;
+}
+
 .left-1{
-    margin-top: 120px;
+    margin-top: 5%;
     color: white;
     font-size: 23px;
 }
@@ -64,14 +99,14 @@ body{
     margin-top: 30px;
     font-size: 30px;
     margin-left: -70%;
-    color: gray;
+    color: rgba(255, 255, 255, 0.393);
 }
 
 .bloc-right{
     position: absolute;
     background: white;
     width: 35.9%;
-    height: 70vh;
+    height: 65vh;
     right: 250px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -98,35 +133,45 @@ body{
     overflow: hidden;
     margin-top: -20px;
     background: rgba(242, 159, 58, 0.313);
+    border: none;
 }
 
 .bnt{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-size: 100px;
-    padding: 20px;
+    padding: 0px;
 }
 
 .bnt .bnt-1{
-    font-size: 25px;
+    font-size: 15px;
     background: #5856D6;
     border-radius: 4px;
-    border: 2px solid #2196F3;
+    border: none;
     color: white;
+    padding: 5px;
 }
+
 .bnt .bnt-2{
-    font-size: 25px;
+    font-size: 15px;
     background: #00BCD4;
     border-radius: 4px;
-    border: 2px solid #2196F3;
     color: white;
+    border: none;
+    padding: 5px;
+
+
 }
+
 .bnt .bnt-3{
-    font-size: 25px;
+    font-size: 15px;
     background: #D84226;
     border-radius: 4px;
-    border: 2px solid #2196F3;
     color: white;
+    border: none;
+    padding: 5px;
+
+
 }
 
 .bnt .bnt-3:hover{
@@ -171,17 +216,23 @@ body{
     width: 90%;
     border-radius: 6px;
     border: 1px solid gray;
-
+    padding: 10px;
 }
+
 .inpb .inpb-1{
     margin-bottom: 20px;
     height: 35px;
     width: 40%;
     border-radius: 6px;
     border: 1px solid #00BCD4;
+    padding: 10px;
 }
 
 .inpb .inpb-1::placeholder{
+    color: #FFA000;
+}
+
+.inpb .inpb-2::placeholder{
     color: #FFA000;
 }
 
@@ -192,6 +243,7 @@ body{
     width: 90%;
     border-radius: 6px;
     border: 1px solid orange;
+    padding: 10px;
 }
 
 .inpb .inpb-2{
@@ -201,6 +253,11 @@ body{
     border-radius: 6px;
     border: 1px solid gray;
     margin-left: -15%;
+    padding: 10px;
+}
+
+.inp .inp-1::placeholder{
+    color: #FFA000;
 }
 
 .inp .inp-2::placeholder{
@@ -233,6 +290,7 @@ body{
     color: white;
     border-radius: 8px;
     border: 1px solid gray;
+    border: white;
 }
 
 
