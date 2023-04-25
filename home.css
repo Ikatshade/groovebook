@@ -3,75 +3,171 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'roboto';
+
+}
+body{
+    overflow-x: hidden !important;
 }
 .container{
+    display: flex;
     width: 100vw;
     height: 400vh;
-    color: #555;
+    color: #000;
 }
 .inner{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
+    gap: 3vw;
 }
 .fsection{
     display: flex;
     width: 100%;
-    height: 135vh;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;  
+    gap: 4vw;
     background-color: #B2EBF2;
     background-image: linear-gradient(
         -100deg,
-        transparent 92.5%,
-        white 92.5%
+        transparent 94%,
+        white 94%
       ),
-      linear-gradient(170deg, transparent 75%, white 75%),   
-      radial-gradient(ellipse farthest-corner at 0 100%, #3c84cc -0%, #316dc2 70%, #4e95d3 70%);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    border-radius: 0 0 0 1vw;
+      linear-gradient(170deg, transparent 72%, white 72%); 
 }
-.menu-row{
-    display: flex;
-    flex-basis: 8%;
-    width: 100%;    
-    background-color: cadetblue;
 
-}
-.menu{
-    flex-basis: 80%;
-    display: flex;
-    width: 80%;
-    background-color: blueviolet;
-    gap: 1vw;
-}
-.menu-content{
-    display: flex;
-    align-items: center;
-    width: 80%;
-    background-color: darkred;
-    gap: 1vw;
-}
-.login{
-    display: flex;
-}
-.logo{
-    flex-basis: 20%;
-    font-size: 2.5vw;
-}
-.nav-content{
-    flex-basis: 60%;
-    display: flex;
-    font-size: 1.4vw;
-    gap: 1vw;
-}
 .fsection-body{
+    width: 85%;
     flex-basis: 92%;
     display: flex;
 }
 .feature-section{
     width: 100%;
-    height: 100%;
+    height: 50vh;
     background-color: darkgoldenrod;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vw;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    height: 40%;
+    justify-content: space-evenly;
+}
+.left{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+.right h1{
+    font-size: 2.2vw;
+}
+.right p{
+    font-size: 1vw;
+}
+.left img{
+    width: 32vw;
+    height: 25vw;
+    object-fit: cover;
+}
+.search{
+    display: flex;
+    padding: .5vw .2vw;
+    width: 50%;
+    background-color: aliceblue;
+    gap: 1%;
+    border-radius: .4vw;
+    align-items: center;
+}
+.search input{
+    outline: none;
+    border: none;
+    background-color: inherit;
+    flex-basis: 90%;
+    padding: .5vw;
+}
+.search input::placeholder{
+    font-size: 1vw;
+    color: darkgrey;
+    font-weight: 300;
+}
+.search iconify-icon{
+    font-size: 1.3vw;
+    flex-basis: 5%;
+    color: #00BCD4;
+}
+.descript{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    flex-basis: 80%;
+    background-color: coral;
+}
+.descript .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    width: 3.5vw;
+    height: 3.5vw;
+    border: 1px solid #00BCD4;
+    padding: 1vw;
+    border-radius: .4vw;
+    transform: rotate(45deg)
+
+}
+.descript iconify-icon{
+    transform: rotate(-45deg);
+}
+.line{
+    display: flex;
+    flex-direction: column;
+    background-color: crimson;
+    width: 15vw;
+    justify-content: center;
+    align-items: flex-start;
+}
+.fluid{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 13vw;
+    height: 6vw;
+    background-color: darksalmon;
+    gap: 2vw;
+}
+.lil{
+    position: relative;
+    width: 1vw;
+    height: 1vw;
+    background-color: #00BCD4;
+}
+.texts{
+    text-align: center;
+}
+/* .poly{
+    position: absolute;
+    bottom: 1.3%;
+    left: 7.8%;
+    transform: rotate(-10deg);
+    width: 2vw;
+    height: 2vw;
+    background-color: #B2EBF2;
+} */
+.course-section{
+    display: flex;
+    height: 120vh;
+    background-color: darkgreen;
+    gap: 2vw;
+}
+.popular{
+    flex-basis: 30% ;
 }
