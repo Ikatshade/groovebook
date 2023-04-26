@@ -13,7 +13,7 @@ body{
 .container{
     display: flex;
     width: 100vw;
-    height: 400vh;
+    height: 400vw;
     color: #000;
 }
 .inner{
@@ -83,7 +83,7 @@ body{
 .fsection{
     display: flex;
     width: 100%;
-    height: 90vh;
+    height: 50vw;
     justify-content: center;
     align-items: center;
     flex-direction: column;  
@@ -104,7 +104,7 @@ body{
 }
 .feature-section{
     width: 100%;
-    height: 50vh;
+    height: 45vh;
     background-color: darkgoldenrod;
     display: flex;
     align-items: center;
@@ -124,6 +124,9 @@ body{
     flex-direction: column;
     flex-basis: 50%;
 }
+p{
+    font-size: 1vw;
+}
 .right h1{
     font-size: 2.2vw;
 }
@@ -134,6 +137,9 @@ body{
     width: 32vw;
     height: 25vw;
     object-fit: cover;
+}
+.texts h1{
+    font-size: 2.2vw;
 }
 .search{
     display: flex;
@@ -224,7 +230,6 @@ body{
     display: flex;
     flex-direction: column;
     height: 130vh;
-    gap: 2vw;
 }
 .back{
     display: flex;
@@ -244,9 +249,9 @@ body{
 .right-pop{
     display: flex;
     height: 100%;
-    background-color: #00BCD4;
+    background-color: rgba(0, 188, 212, .9);
     border-radius: 0 4vw 0 0;
-    flex-basis: 70%;
+    flex-basis: 80%;
 }
 .slide{
     display: flex;
@@ -268,7 +273,7 @@ body{
 .left-pop{
     display: flex;
     justify-content: flex-end;
-    flex-basis: 30%;
+    flex-basis: 20%;
     background-color: white;
 }
 .cards{
@@ -285,6 +290,7 @@ body{
     justify-content: flex-start;
     width: 12vw;
     height: 18vw;
+    padding: .15vw;
     flex-direction: column;
     background-color: white;
     border-radius: .3vw;
@@ -336,4 +342,26 @@ img{
     color: #00BCD4;
     border-radius: .2vw;
     background-color: transparent;
+}
+.explore{
+    flex-basis: 60%;
+    background-image: linear-gradient(to right, rgba(255, 236, 179, .4) 80%, white 80%);
+}
+.course-stack{
+    box-shadow:
+    /* The top layer shadow */
+    0 1px 1px rgba(0,0,0,0.15),
+    /* The second layer */
+    0 10px 0 -5px #eee,
+    /* The second layer shadow */
+    0 10px 1px -4px rgba(0,0,0,0.15),
+     /* The third layer */
+    0 20px 0 -10px #eee,
+    /* The third layer shadow */
+    0 20px 1px -9px rgba(0,0,0,0.15);
+    /* Padding for demo purposes */
+    padding: 30px;
+    width: 15vw;
+    height: 10vw;
+    background-color: #189A96;
 }
