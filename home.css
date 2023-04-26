@@ -360,8 +360,9 @@ img{
     /* The third layer shadow */
     0 20px 1px -9px rgba(0,0,0,0.15);
     /* Padding for demo purposes */
-    padding: 30px;
+    padding: 2vw;
     width: 15vw;
     height: 10vw;
     background-color: #189A96;
+    border-radius: 1vw;
 }
