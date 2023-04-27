@@ -229,7 +229,9 @@ p{
 .course-section{
     display: flex;
     flex-direction: column;
-    height: 130vh;
+    height: 110vw;
+    width: 100vw;
+    background-color: chartreuse;
 }
 .back{
     display: flex;
@@ -241,7 +243,7 @@ p{
 }
 .popular{
     display: flex;
-    flex-basis: 40%;
+    flex-basis: 25%;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -344,25 +346,117 @@ img{
     background-color: transparent;
 }
 .explore{
-    flex-basis: 60%;
+    flex-basis: 45%;
     background-image: linear-gradient(to right, rgba(255, 236, 179, .4) 80%, white 80%);
+}
+.courses{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff9c1a;
+    gap: 2vw;
 }
 .course-stack{
     box-shadow:
     /* The top layer shadow */
     0 1px 1px rgba(0,0,0,0.15),
     /* The second layer */
-    0 10px 0 -5px #eee,
+    0 12px 0 -5px #eee,
     /* The second layer shadow */
-    0 10px 1px -4px rgba(0,0,0,0.15),
+    0 12px 1px -4px rgba(0,0,0,0.15),
      /* The third layer */
-    0 20px 0 -10px #eee,
+    0 24px 0 -10px #eee,
     /* The third layer shadow */
-    0 20px 1px -9px rgba(0,0,0,0.15);
+    0 24px 1px -9px rgba(0,0,0,0.15);
     /* Padding for demo purposes */
-    padding: 2vw;
-    width: 15vw;
-    height: 10vw;
+    width: 17vw;
+    height: 12vw;
     background-color: #189A96;
     border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+.c-img{
+    display: flex;
+    flex-basis: 70%;
+}
+.c-img img{
+    position: absolute;
+    z-index: 0;
+    width: 17vw;
+    height: 9.1vw;
+    object-fit: cover;
+    border-radius: 1vw 1vw 0 0;
+}
+.c-title{
+    z-index: 1;
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #1B6D6B;
+    border-radius: 1vw;
+    padding-left: 1vw;
+    flex-direction: column;
+    transition: 1s ease;
+    gap: .2vw;
+
+}
+.c-title .tit{
+    color: #E0EBEB;
+    text-transform: capitalize;
+    font-size: 1.3vw;
+    width: 90%;
+}
+.c-desc{
+    font-size: .8vw ;
+    display: none;
+    text-decoration: none;
+    color: #E0EBEB;
+    text-decoration-color: #00BCD4;
+    font-weight: 300;
+
+}
+.course-stack .c-title:hover{
+    flex-basis: 110% !important;
+    justify-content: flex-start;
+    padding-top: 1vw;
+}
+.c-title:hover .tit{
+    border-bottom: .2vw solid #189A96;
+}
+.c-title:hover .c-desc{
+    display: flex;
+}
+.c-line{
+    display: flex;
+    gap: 1vw;
+}
+.liltext{
+    display: flex;
+    flex-basis: 30%;
+
+}
+.flower-img{
+    flex-basis: 50%;
+    background-color: bisque;
+}
+.ac-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 50%;
+    background-color: crimson;
+}
+.ac-title{
+    display: flex;
+    flex-direction: column;
+    width: 21vw;
+    font-size: 3vw;
+    color: white;
+    background-color: brown;
+    text-transform: capitalize;
 }
