@@ -9,12 +9,14 @@
 body{
     
     overflow-x: hidden !important;
+    font-family: 'roboto';
 }
 .container{
     display: flex;
     width: 100vw;
     height: 400vw;
     color: #000;
+    font-family: 'roboto';
 }
 .inner{
     display: flex;
@@ -29,7 +31,6 @@ body{
     width: 95%;    
     justify-content: flex-end;
     align-items: center;
-    background-color: aquamarine;
 
 }
 .menu{
@@ -83,7 +84,7 @@ body{
 .fsection{
     display: flex;
     width: 100%;
-    height: 50vw;
+    height: 45vw;
     justify-content: center;
     align-items: center;
     flex-direction: column;  
@@ -104,12 +105,12 @@ body{
 }
 .feature-section{
     width: 100%;
-    height: 45vh;
-    background-color: darkgoldenrod;
+    height: 27.5vw;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    gap: 2vw;
+    gap: 3vw;
 }
 .right{
     display: flex;
@@ -159,7 +160,6 @@ p{
 }
 .search input::placeholder{
     font-size: 1vw;
-    color: darkgrey;
     font-weight: 300;
 }
 .search iconify-icon{
@@ -170,10 +170,10 @@ p{
 .descript{
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 90%;
+    align-items: flex-start;
+    width: 35%;
     flex-basis: 80%;
-    background-color: coral;
+    padding-left: 7.5vw;
 }
 .descript .icon{
     display: flex;
@@ -194,19 +194,18 @@ p{
 .line{
     display: flex;
     flex-direction: column;
-    background-color: crimson;
     width: 15vw;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    gap: .5vw;
 }
 .fluid{
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
-    width: 13vw;
+    align-items: center;
+    width: 20vw;
     height: 6vw;
-    background-color: darksalmon;
-    gap: 2vw;
+    gap: 1vw;
 }
 .lil{
     position: relative;
@@ -214,24 +213,19 @@ p{
     height: 1vw;
     background-color: #00BCD4;
 }
+.text{
+    display: flex;
+    flex-direction: column;
+}
 .texts{
     text-align: center;
 }
-/* .poly{
-    position: absolute;
-    bottom: 1.3%;
-    left: 7.8%;
-    transform: rotate(-10deg);
-    width: 2vw;
-    height: 2vw;
-    background-color: #B2EBF2;
-} */
+
 .course-section{
     display: flex;
     flex-direction: column;
     height: 110vw;
     width: 100vw;
-    background-color: chartreuse;
 }
 .back{
     display: flex;
@@ -355,7 +349,6 @@ img{
     width: 75%;
     justify-content: center;
     align-items: center;
-    background-color: #ff9c1a;
     gap: 2vw;
 }
 .course-stack{
@@ -437,19 +430,18 @@ img{
 .liltext{
     display: flex;
     flex-basis: 30%;
+    background-color: #00838F;
 
 }
 .flower-img{
     flex-basis: 50%;
-    background-color: bisque;
 }
 .ac-text{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     flex-basis: 50%;
-    background-color: crimson;
 }
 .ac-title{
     display: flex;
@@ -457,6 +449,115 @@ img{
     width: 21vw;
     font-size: 3vw;
     color: white;
-    background-color: brown;
     text-transform: capitalize;
+}
+.desc{
+    display: flex;
+    width:40vw;
+    color: white;
+    font-size: 1.2vw;
+}
+.btn{
+    background-color: white;
+    color: #189A96;
+    border: none;
+    font-size: 1.3vw;
+    padding: .5vw 1.8vw;
+    border-radius: .4vw;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.lil-square{
+    position: relative;
+    height: 3vw;
+    width: 3vw;
+    left: 15%;
+    background-color: #00BCD4;
+    transform: rotate(45deg);
+    border-radius: .4vw;
+    box-shadow: .04vw .04vw 1vw .1vw rgba(80, 86, 80, 0.75);
+}
+.square{
+    position: relative;
+    background-color: #00BCD4;
+    transform: rotate(45deg);
+    box-shadow: .04vw .04vw 1vw .1vw rgba(80, 86, 80, 0.75);
+}
+.top{
+    width: 10vw;
+    height: 10vw;
+    left: 40%;
+    top: -4vw;
+    border-radius: 1vw;
+}
+.lil2{
+    width: 8vw;
+    height: 8vw;
+    left: 15%;
+    border-radius: .8vw;
+}
+.bt{
+    width: 12vw;
+    height: 12vw;
+    left: 45%;
+    border-radius: 1.2vw;
+}
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    gap: 3vw;
+    width: 100%;
+    height: 32vw;
+}
+.test-div{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    gap: 1vw;
+}
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 50%;
+    border: 2px solid rgba(0, 0, 0, .12);
+    padding: 2vw;
+}
+.detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #00BCD4;
+    color: white;
+    font-size: 3vw;
+    width: 4vw;
+    height: 4vw;
+    top:-4vw;
+    transform: rotate(45deg);
+    border-radius: .5vw;
+}
+.detail iconify-icon{
+    transform: rotate(-45deg);
+}
+
+.test-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1vw;
+}
+
+.signature{
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    font-size: 1.2vw;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.sign{
+    font-size: .95vw;
 }
