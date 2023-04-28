@@ -4,10 +4,9 @@
     padding: 0;
     margin: 0;
     font-family: 'roboto';
-
+    scroll-behavior: smooth;
 }
 body{
-    
     overflow-x: hidden !important;
     font-family: 'roboto';
 }
@@ -34,7 +33,7 @@ body{
 
 }
 .menu{
-    flex-basis: 90%;
+    flex-basis: 75%;
     display: flex;
     width: 80%;
     gap: 1vw;
@@ -46,14 +45,14 @@ body{
     gap: 1vw;
 }
 .login{
-    flex-basis: 18%;
+    flex-basis: 22%;
     height: 100%;
 }
 .rect{
     position: absolute;
     z-index: 0;
     height: 20%;
-    width: 20%;
+    width: 30%;
     background-color: #00BCD4;
     border-radius: 1.5vw;
     top: -10%;
@@ -69,21 +68,31 @@ body{
     align-items: center;
     width: 100%;
     height: 100%;
-    gap: 1vw;
-    text-transform: capitalize;
+    gap: 2vw;
+    text-transform: uppercase;
 }
 .login-a a{
     color: white;
+
+}
+.login-a iconify-icon{
+    font-size: 1.5vw;
 }
 .logo{
     flex-basis: 20%;
     font-size: 2.5vw;
 }
+.reg{
+    background-color: white;
+    color: #00838F !important;
+    padding: .4vw 1.1vw;
+    border-radius: .5vw;
+}
 .nav-content{
     flex-basis: 80%;
     display: flex;
     font-size: 1.1vw;
-    gap: 1vw;
+    gap: 1.5vw;
 }
 .nav-content a{
     text-transform: uppercase;
@@ -228,17 +237,33 @@ p{
     text-align: center;
 }
 .texts h1{
-    text-decoration: underline;
-    text-decoration-color: #B2EBF2;
-    text-decoration-offset: -0.2vw;
     text-transform: capitalize;
-    
+    z-index: 1; 
+    position: relative;
 }
-
+.line-through{
+    position: relative;
+    height: 1vw;
+    width: 12vw;
+    top: -1.7vw;
+    left: 7vw;
+    z-index: 0;
+    background-color: rgba(178, 235, 242, 1);
+}
+.lined{
+    color: #00838F !important;
+}
+.men{
+    width: 6vw;
+    height: .5vw;
+    left: -.1vw;
+    top: -.7vw;
+    background-color: rgba(0, 188, 212, .5);
+}
 .course-section{
     display: flex;
     flex-direction: column;
-    height: 110vw;
+    height: 120vw;
     width: 100vw;
 }
 .back{
@@ -266,6 +291,13 @@ p{
 .slide{
     display: flex;
     align-items: center;
+    width: 25vw;
+    gap: 2vw;
+    margin-left: 1vw;
+}
+.pop{
+    display: flex;
+    flex-direction: column;
 }
 .slide iconify-icon{
     font-size: 2vw;
@@ -276,9 +308,10 @@ p{
 
 }
 .r{
+    width: 4vw;
     position: absolute;
     z-index: 4;
-    right: 0;
+    right: 0%;
 }
 .left-pop{
     display: flex;
@@ -354,16 +387,33 @@ img{
     background-color: transparent;
 }
 .explore{
-    flex-basis: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-basis: 50%;
     background-image: linear-gradient(to right, rgba(255, 236, 179, .4) 80%, white 80%);
+}
+.exp{
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    height: 85%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4vw;
+}
+.exp-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
 }
 .courses{
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 100%;
     justify-content: center;
-    align-items: center;
-    gap: 2vw;
+    align-items: flex-start;
+    gap: 3vw;
 }
 .course-stack{
     box-shadow:
@@ -378,10 +428,10 @@ img{
     /* The third layer shadow */
     0 24px 1px -9px rgba(0,0,0,0.15);
     /* Padding for demo purposes */
-    width: 17vw;
-    height: 12vw;
+    width: 22vw;
+    height: 16vw;
     background-color: #189A96;
-    border-radius: 1vw;
+    border-radius: .5vw;
     display: flex;
     flex-direction: column;
 }
@@ -392,10 +442,10 @@ img{
 .c-img img{
     position: absolute;
     z-index: 0;
-    width: 17vw;
-    height: 9.1vw;
+    width: 22vw;
+    height: 12.1vw;
     object-fit: cover;
-    border-radius: 1vw 1vw 0 0;
+    border-radius: .5vw .5vw 0 0;
 }
 .c-title{
     z-index: 1;
@@ -404,7 +454,7 @@ img{
     justify-content: center;
     align-items: flex-start;
     background-color: #1B6D6B;
-    border-radius: 1vw;
+    border-radius: .5vw;
     padding-left: 1vw;
     flex-direction: column;
     transition: 1s ease;
@@ -439,11 +489,12 @@ img{
 }
 .c-line{
     display: flex;
-    gap: 1vw;
+    gap: 3vw;
+    margin-left: 5vw;
 }
 .liltext{
     display: flex;
-    flex-basis: 30%;
+    flex-basis: 25%;
     background-color: #00838F;
 
 }
