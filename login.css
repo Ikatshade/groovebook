@@ -34,7 +34,6 @@ body{
     inset: 0;
     transform: rotate(-15deg);
     z-index: -1;
-    
 }
 
 .container .bloc-left{
