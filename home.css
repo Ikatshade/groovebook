@@ -16,7 +16,7 @@ body {
 .container {
     display: flex;
     width: 100vw;
-    height: 340vw;
+    height: 330vw;
     color: #000;
     font-family: 'roboto';
 }
