@@ -341,6 +341,7 @@ p {
 .pop {
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 .slide iconify-icon {
