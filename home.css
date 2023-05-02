@@ -729,7 +729,7 @@ img {
 
 .update{
     display: flex;
-    height: 50vw;
+    height: 45vw;
     align-items: center;
     flex-direction: column;
     gap: 1vw;
@@ -858,5 +858,7 @@ img {
 }
 
 .news-letter{
-    
+    display: flex;
+    width: 100%;
+    height: 40vw;
 }
