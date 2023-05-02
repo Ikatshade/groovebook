@@ -15,7 +15,7 @@ body {
 .container {
     display: flex;
     width: 100vw;
-    height: 400vw;
+    height: 340vw;
     color: #000;
     font-family: 'roboto';
 }
@@ -886,5 +886,34 @@ img {
     background-color: white;
     border-radius: .5vw;
     box-shadow: .04vw .04vw 1vw .1vw rgba(80, 86, 80, 0.75);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 90%;
+    gap: 3vw;
+    text-align: center;
+}
+input{
+    width: 25vw;
+    padding: .7vw;
+    border: 1px solid rgba(0, 0, 0, .48);
+    border-radius: .3vw;
+    font-size: 1vw;
+}
+input::placeholder{
+    text-transform: capitalize;
+}
+.bttn{
+    width: 7vw;
+    font-size: 1vw;
+    color: white;
+    text-transform: uppercase;
+    background-color: #00BCD4;
+    border: none;
+    box-shadow: .02vw .02vw .5vw .1vw rgba(80, 86, 80, 0.75);
 
 }
