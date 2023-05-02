@@ -858,5 +858,33 @@ img {
 }
 
 .news-letter{
-    
+    display: flex;
+    flex-direction: column;
+    height: 40vw;
+}
+.image-news{
+    flex-basis: 60%;
+}
+.image-news img{
+    height: 24vw;
+    object-fit: cover;
+}
+.news-form{
+    position: relative;
+    bottom: 15vw;
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-card{
+    width: 45vw;
+    height: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: .5vw;
+    box-shadow: .04vw .04vw 1vw .1vw rgba(80, 86, 80, 0.75);
+
 }
