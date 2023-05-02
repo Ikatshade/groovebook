@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
 * {
     text-decoration: none;
     box-sizing: border-box;
@@ -48,9 +49,13 @@ body {
     display: flex;
     align-items: center;
     width: 80%;
-    gap: 1vw;
+    gap: 2vw;
 }
 
+.logo a{
+    font-family: 'ZCOOL XiaoWei', sans-serif;
+    color: white;
+}
 .login {
     flex-basis: 22%;
     height: 100%;
@@ -91,6 +96,9 @@ body {
 }
 
 .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-basis: 20%;
     font-size: 2.5vw;
 }
@@ -105,6 +113,8 @@ body {
 .nav-content {
     flex-basis: 80%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.1vw;
     gap: 1.5vw;
 }
@@ -299,7 +309,7 @@ p {
     width: 6vw;
     height: .5vw;
     left: -.1vw;
-    top: -.7vw;
+    top: -1vw;
     background-color: rgba(0, 188, 212, .5);
 }
 

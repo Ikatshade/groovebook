@@ -259,8 +259,8 @@ body{
 }
 
 .btn{
-    margin: 30px;
-    padding: 0px;
+    margin-top: 30px;
+    padding:.3vw;
     margin-left: 100px;
     width: 60%;
     height: 30px;
