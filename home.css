@@ -145,6 +145,11 @@ body {
     gap: 3vw;
 }
 
+h2{
+    font-size: 1.75vw;
+    text-transform: capitalize;
+}
+
 .right {
     display: flex;
     flex-direction: column;
@@ -649,6 +654,13 @@ img {
     border-radius: 1.2vw;
 }
 
+.second{
+    width: 5vw;
+    height: 5vw;
+    left: 35vw;
+    bottom: -18.5vw;
+    border-radius: .45vw;
+}
 .testimonials {
     display: flex;
     flex-direction: column;
@@ -713,4 +725,138 @@ img {
 
 .sign {
     font-size: .95vw;
+}
+
+.update{
+    display: flex;
+    height: 50vw;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw;
+}
+.up-text{
+    width: 90%;
+}
+
+.inner-u{
+    display: flex;
+    width: 100%;
+    height: 35vw;
+}
+.u1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 80%;
+    border: 2px solid #FFA000;
+    border-left: 0;
+    border-radius: 0 6vw 6vw 0;
+    flex-direction: column;
+    gap: 2vw;
+}
+.u2{
+    flex-basis: 20%;
+}
+.u2 iframe{
+    position: relative;
+    width: 25vw;
+    height: 20vw;
+    border-radius: 1vw;
+    left: -12vw;
+    top: 8vw;
+}
+.u2 video{
+    height: 100%;
+}
+.u1-content{
+    width: 80%;
+}
+
+.u-lines{
+    width: 80%;
+}
+.u-content{
+    display: flex;
+    position: relative;
+    align-items: center;
+    z-index: 1;
+    bottom: 3.2vw;
+    left: 2.8vw;
+    gap: .5vw;
+}
+.ut-desc{
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+    flex-basis: 60%;
+}
+
+.u-back{
+    position: relative;
+    display: flex;
+    width: 12vw;
+    opacity: 0.8;
+    z-index: 0;
+}
+
+.u-square{
+    transform: rotate(45deg);
+    top: 2vw;
+}
+.a{
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: #FFECB3;
+    left: 1.7vw;
+    bottom: 1vw;
+    border-radius: .3vw;
+    position: relative;
+    z-index: 1;
+}
+.b{
+    position: relative;
+    width: 5vw;
+    height: 5vw;
+    background-color: #FFFAF2;
+    border-radius: .6vw;
+    z-index: 0;
+}
+.sub{
+    text-transform: capitalize;
+    font-size: .8vw;
+    color: rgba(0, 0, 0, .48);
+}
+.u-desc{
+    font-size: 1.1vw;
+    font-weight: 600;
+}
+.other{
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 6vw;
+    width: 6vw;
+    color: rgba(0, 0, 0, .4);
+}
+.month{
+    font-size: 2vw;
+}
+.day{
+    font-size: 3vw;
+}
+.year{
+    font-size: 1.3vw;
+}
+.u1 a{
+    position: relative;
+    font-size: 1vw;
+    color: #FFA000;
+    text-transform: uppercase;
+    bottom: 1.3vw;
+    left: 1.5vw;
+}
+
+.news-letter{
+    
 }
